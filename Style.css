@@ -1,0 +1,66 @@
+
+/* #cont{
+  display: block;
+  background: red;
+  width:100px;
+  height:100px;
+  transform:translate(-200px,0px);
+} */
+body{
+  height:100%;
+  padding:0;
+  display: flex;
+}
+#cont{
+  display: block;
+  width:100px;
+  height:100px;
+  top:10px;
+  position:relative;
+  animation:loader 1s 1, spinner 2s 1 1.2s;
+}
+.nav{
+  display:flex;
+}
+#order{
+  color:black;
+  position:relative;
+  top:20px;
+  left: 200px;
+  text-align: center;
+  height:40px;
+  width:50px;
+  background:none;
+  border-width:2px;
+  border-radius:10px;
+}
+@keyframes loader{
+  from {
+  left:-200px;
+  }
+  to{
+    left:10px;
+  }
+}
+@keyframes spinner {
+  0% {
+  transform:rotate(0deg);
+  }
+  50%{
+   transform:rotate(90deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+@keyframes stretcher{
+  from{
+    width:100px;
+  }
+  to{
+    width:400px;
+  }
+}
+@keyframes bounce{
+  
+}
